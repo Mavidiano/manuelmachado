@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Manuel Machado · Reformas, granito y piedra</title>
   <meta name="description" content="Manuel Machado, autónomo especializado en granito y piedra: muros de perpiaño, columnas para cenadores, churrasqueras de piedra y reformas en Galicia y Asturias. Presupuesto sin compromiso.">
+  <link rel="icon" href="logo.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://images.unsplash.com">
@@ -56,7 +57,12 @@
     header.scrolled { background: rgba(26,24,22,.94); backdrop-filter: blur(8px); }
     .nav { display: flex; align-items: center; justify-content: space-between; height: 72px; gap: 16px; }
     .brand { font-family: var(--display); font-weight: 800; font-size: 1.25rem; text-decoration: none; letter-spacing: 1px; }
-    .brand span { color: var(--accent); }
+    .brand { display: inline-flex; align-items: center; gap: 12px; }
+    .brand-text { white-space: nowrap; }
+    .brand-text span { color: var(--accent); }
+    .logo { width: 40px; height: 37px; flex: none; }
+    .footer-brand { display: inline-flex; align-items: center; gap: 10px; }
+    .footer-brand .logo { width: 26px; height: 24px; }
     .nav-links { display: flex; gap: 28px; list-style: none; font-size: .95rem; font-weight: 500; }
     .nav-links a { text-decoration: none; opacity: .85; }
     .nav-links a:hover { opacity: 1; }
@@ -181,6 +187,8 @@
       section { padding: 68px 0; }
       .float-call { display: grid; }
       .contact-grid { grid-template-columns: 1fr; }
+      .brand { font-size: 1.02rem; gap: 10px; }
+      .logo { width: 34px; height: 32px; }
       .btn { flex: 1 1 100%; justify-content: center; }
       .hero { background-position: 30% center; }
     }
@@ -205,7 +213,16 @@
 
   <header id="top">
     <nav class="wrap nav">
-      <a href="#inicio" class="brand">Manuel <span>Machado</span></a>
+      <a href="#inicio" class="brand" aria-label="Manuel Machado, inicio">
+        <svg class="logo" viewBox="6 10 52 48" aria-hidden="true">
+          <g fill="none" stroke-width="5.5" stroke-linejoin="miter">
+            <path d="M11 49V15l10.5 19L32 15v34" stroke="#efebe5"/>
+            <path d="M32 15l10.5 19L53 15v34" stroke="#c27a3e"/>
+          </g>
+          <rect x="8" y="52" width="48" height="4" fill="#c27a3e"/>
+        </svg>
+        <span class="brand-text">Manuel <span>Machado</span></span>
+      </a>
       <ul class="nav-links">
         <li><a href="#servicios">Servicios</a></li>
         <li><a href="#trabajos">Trabajos</a></li>
@@ -402,7 +419,16 @@
 
   <footer>
     <div class="wrap">
-      <span>© <span id="year">2026</span> Manuel Machado · Reformas, granito y piedra</span>
+      <span class="footer-brand">
+        <svg class="logo" viewBox="6 10 52 48" aria-hidden="true">
+          <g fill="none" stroke-width="5.5" stroke-linejoin="miter">
+            <path d="M11 49V15l10.5 19L32 15v34" stroke="#efebe5"/>
+            <path d="M32 15l10.5 19L53 15v34" stroke="#c27a3e"/>
+          </g>
+          <rect x="8" y="52" width="48" height="4" fill="#c27a3e"/>
+        </svg>
+        <span>© <span id="year">2026</span> Manuel Machado · Reformas, granito y piedra</span>
+      </span>
       <span>by: MavidianoDev</span>
     </div>
   </footer>
