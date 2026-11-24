@@ -1,9 +1,31 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
   <title>Manuel Machado</title>
+  <defs>
+    <path id="m" d="M3 53V11h8.5l8 18 8-18H36v42h-8V28l-5.7 12.5h-5.6L11 28v25z"/>
+    <mask id="juntas" maskUnits="userSpaceOnUse" x="0" y="0" width="64" height="64">
+      <rect width="64" height="64" fill="#fff"/>
+      <g fill="#000">
+        <rect x="10.4" y="10" width="1.4" height="18"/>
+        <rect x="27.3" y="10" width="1.4" height="18"/>
+        <rect x="35.4" y="10" width="1.4" height="18"/>
+        <rect x="52.3" y="10" width="1.4" height="18"/>
+        <rect x="18.8" y="24" width="1.4" height="18"/>
+        <rect x="43.8" y="24" width="1.4" height="18"/>
+        <rect x="2" y="31" width="10" height="1.4"/>
+        <rect x="2" y="43" width="10" height="1.4"/>
+        <rect x="27" y="24" width="10" height="1.4"/>
+        <rect x="27" y="37" width="10" height="1.4"/>
+        <rect x="52" y="31" width="10" height="1.4"/>
+        <rect x="52" y="43" width="10" height="1.4"/>
+        <rect x="21.5" y="55" width="1.4" height="6"/>
+        <rect x="41.1" y="55" width="1.4" height="6"/>
+      </g>
+    </mask>
+  </defs>
   <rect width="64" height="64" rx="12" fill="#1a1816"/>
-  <g fill="none" stroke-width="5.5" stroke-linejoin="miter" stroke-linecap="butt">
-    <path d="M11 49V15l10.5 19L32 15v34" stroke="#efebe5"/>
-    <path d="M32 15l10.5 19L53 15v34" stroke="#c27a3e"/>
+  <g transform="translate(6.4 5.4) scale(0.8)" mask="url(#juntas)">
+    <use href="#m" fill="#e6dfd4"/>
+    <use href="#m" fill="#c27a3e" transform="translate(25 0)"/>
+    <rect x="3" y="55.5" width="58" height="4" fill="#e6dfd4"/>
   </g>
-  <rect x="8" y="52" width="48" height="4" fill="#c27a3e"/>
 </svg>

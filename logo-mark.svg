@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <title>Manuel Machado</title>
+  <defs>
+    <path id="m" d="M3 53V11h8.5l8 18 8-18H36v42h-8V28l-5.7 12.5h-5.6L11 28v25z"/>
+    <!-- Juntas de mortero: las letras se construyen como piezas de cantería -->
+    <mask id="juntas" maskUnits="userSpaceOnUse" x="0" y="0" width="64" height="64">
+      <rect width="64" height="64" fill="#fff"/>
+      <g fill="#000">
+        <!-- pilar / pieza diagonal -->
+        <rect x="10.4" y="10" width="1.4" height="18"/>
+        <rect x="27.3" y="10" width="1.4" height="18"/>
+        <rect x="35.4" y="10" width="1.4" height="18"/>
+        <rect x="52.3" y="10" width="1.4" height="18"/>
+        <!-- dovela central de cada M -->
+        <rect x="18.8" y="24" width="1.4" height="18"/>
+        <rect x="43.8" y="24" width="1.4" height="18"/>
+        <!-- hiladas de los pilares, desplazadas -->
+        <rect x="2" y="31" width="10" height="1.4"/>
+        <rect x="2" y="43" width="10" height="1.4"/>
+        <rect x="27" y="24" width="10" height="1.4"/>
+        <rect x="27" y="37" width="10" height="1.4"/>
+        <rect x="52" y="31" width="10" height="1.4"/>
+        <rect x="52" y="43" width="10" height="1.4"/>
+        <!-- cimiento -->
+        <rect x="21.5" y="55" width="1.4" height="6"/>
+        <rect x="41.1" y="55" width="1.4" height="6"/>
+      </g>
+    </mask>
+  </defs>
+  <g mask="url(#juntas)">
+    <use href="#m" fill="#e6dfd4"/>
+    <use href="#m" fill="#c27a3e" transform="translate(25 0)"/>
+    <rect x="3" y="55.5" width="58" height="4" fill="#e6dfd4"/>
+  </g>
+</svg>
